@@ -1,0 +1,8 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+    <h1>Invalidate</h1>
+    <p>Referer: <a href="{{ referer }}">{{ referer }}</a></p>
+    <p>Invalidate status: {{ response.getStatusCode() }}</p>
+    {#{{ dump(response) }}#}
+    {{ include('partial/menu.html.twig') }}
+{% endblock %}

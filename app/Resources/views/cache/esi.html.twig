@@ -1,0 +1,7 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+    <h1>Esi</h1>
+    {{ "now"|date("Y-m-d H:i:s") }}
+    {{ render_esi(controller('AppBundle:Default:esiPart')) }}
+    {{ include('partial/menu.html.twig') }}
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+    <h1>Expire max age 1 hour</h1>
+    {{ "now"|date("Y-m-d H:i:s") }}
+    {{ include('partial/menu.html.twig') }}
+{% endblock %}

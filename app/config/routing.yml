@@ -1,3 +1,29 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+cache_index:
+  path: /
+  defaults: { _controller: AppBundle:Default:index }
+  methods:  [GET]
+
+cache_expire_max_age:
+  path: /cache/max-age
+  defaults: { _controller: AppBundle:Default:cacheMaxAge }
+  methods:  [GET]
+
+cache_expire_date:
+  path: /cache/date
+  defaults: { _controller: AppBundle:Default:cacheDate }
+  methods:  [GET]
+
+cache_esi:
+  path: /cache/esi
+  defaults: { _controller: AppBundle:Default:esi }
+  methods:  [GET]
+
+cache_invalidation:
+  path: /cache/invalidation
+  defaults: { _controller: AppBundle:Default:cacheInvalidation }
+  methods:  [GET]
+
+cache_expire_max_age_hour:
+  path: /cache/max-age-hour
+  defaults: { _controller: AppBundle:Default:cacheMaxAgeHour }
+  methods:  [GET]
